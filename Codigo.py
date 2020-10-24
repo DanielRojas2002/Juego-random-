@@ -44,3 +44,24 @@ class adivina:
             print(separador)
             print("Se acabaron tus vidas")
             print(separador)
+
+separador=("*"*30)
+opcion="Si"
+
+while opcion=="Si"or opcion=="si":
+    print("Bienvenido al juego")
+    print(separador)
+    
+    print("El juego consiste en que adivines el numero en el que estoy pensando")
+    print("Tienes 5 vidas ")
+    print(separador)
+    nombre=input("Dime tu nombre : ")
+    print(separador)
+    print("Escribiendo en la Base de Datos...")
+    time.sleep(3)
+    print(separador)
+    numero=int(input("Dime el numero en el que estoy pensando : "))
+    objeto1=adivina(numero,nombre)
+    objeto1.suerte()
+    print("*"*30)
+    opcion=input("Quieres seguir jugando: ")
